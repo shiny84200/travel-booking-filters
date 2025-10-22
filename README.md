@@ -12,16 +12,18 @@ This project is an **Angular-based travel booking filter system** demonstrating 
 ✅ Value passing between filters  
 ✅ Dynamic options fetched via JSON Server  
 ✅ Responsive UI with travel-themed background  
+✅ **Assessment 2:** Mutually exclusive food filters with reactive forms  
+✅ **Navigation button:** Quick access to Assessment 2 page
 
 ---
 
 ## 🧱 Tech Stack
 
-- **Angular 17+**
-- **TypeScript**
-- **Reactive Forms**
-- **JSON Server** (for mock API)
-- **CSS / Flexbox** for styling
+- **Angular 17+**  
+- **TypeScript**  
+- **Reactive Forms**  
+- **JSON Server** (for mock API)  
+- **CSS / Flexbox** for styling  
 
 ---
 
