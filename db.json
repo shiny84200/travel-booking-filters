@@ -21,5 +21,30 @@
     { "id": 6, "stateId": 4, "name": "Montreal" },
     { "id": 7, "stateId": 5, "name": "Sydney" },
     { "id": 8, "stateId": 6, "name": "Melbourne" }
+  ],
+  "filters": [
+    { "name": "Vegetarian", "mutuallyExclusiveWith": ["Non-Vegetarian", "Vegan"] },
+    { "name": "Non-Vegetarian", "mutuallyExclusiveWith": ["Vegetarian", "Vegan"] },
+    { "name": "Vegan", "mutuallyExclusiveWith": ["Vegetarian", "Non-Vegetarian"] },
+    { "name": "Breakfast", "mutuallyExclusiveWith": ["Lunch", "Dinner"] },
+    { "name": "Lunch", "mutuallyExclusiveWith": ["Breakfast", "Dinner"] },
+    { "name": "Dinner", "mutuallyExclusiveWith": ["Breakfast", "Lunch"] },
+    { "name": "Gluten-Free", "mutuallyExclusiveWith": [] },
+    { "name": "Dairy-Free", "mutuallyExclusiveWith": [] },
+    { "name": "Nut-Free", "mutuallyExclusiveWith": [] },
+    { "name": "Italian", "mutuallyExclusiveWith": [] },
+    { "name": "Indian", "mutuallyExclusiveWith": [] },
+    { "name": "Spicy", "mutuallyExclusiveWith": ["Mild"] },
+    { "name": "Mild", "mutuallyExclusiveWith": ["Spicy"] }
+  ],
+  "foodItems": [
+    { "id": 1, "name": "Salad", "type": "Vegetarian", "meal": "Breakfast", "diet": ["Gluten-Free"] },
+    { "id": 2, "name": "Chicken Curry", "type": "Non-Vegetarian", "meal": "Lunch", "diet": ["Spicy"] },
+    { "id": 3, "name": "Paneer Butter Masala", "type": "Vegetarian", "meal": "Lunch", "diet": ["Mild"] },
+    { "id": 4, "name": "Gluten-Free Bread", "type": "Vegan", "meal": "Breakfast", "diet": ["Gluten-Free"] },
+    { "id": 5, "name": "Vegan Ice Cream", "type": "Vegan", "meal": "Dinner", "diet": ["Dairy-Free", "Nut-Free"] },
+    { "id": 6, "name": "Italian Pizza", "type": "Vegetarian", "meal": "Dinner", "diet": ["Mild"] },
+    { "id": 7, "name": "Indian Biryani", "type": "Non-Vegetarian", "meal": "Dinner", "diet": ["Spicy"] },
+    { "id": 8, "name": "Smoothie", "type": "Vegan", "meal": "Breakfast", "diet": ["Dairy-Free"] }
   ]
 }

@@ -1,0 +1,22 @@
+<div class="container-row">
+  <div class="filter-card">
+    <h3>Filters</h3>
+    <form [formGroup]="filterForm" class="filter-section">
+      <div *ngFor="let filter of filters" class="filter-item">
+        <label>
+          <input type="checkbox" [formControlName]="filter.name" />
+          {{ filter.name }}
+        </label>
+      </div>
+    </form>
+  </div>
+
+  <div class="food-card">
+    <h3>Food Items</h3>
+    <ul>
+      <li *ngFor="let item of filteredFood">
+        {{ item.name }} ({{ item.type }}, {{ item.meal }}, {{ item.diet.join(', ') }})
+      </li>
+    </ul>
+  </div>
+</div>

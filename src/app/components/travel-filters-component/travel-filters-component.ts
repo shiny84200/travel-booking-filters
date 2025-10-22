@@ -10,6 +10,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
 import { switchMap, tap } from 'rxjs/operators';
 import { of } from 'rxjs';
+import { RouterModule } from '@angular/router';
+
 @Component({
   selector: 'app-travel-filters-component',
   imports: [CommonModule,
@@ -19,7 +21,8 @@ import { of } from 'rxjs';
     MatFormFieldModule,
     ReactiveFormsModule,
     MatSelectModule,
-    MatCardModule],
+    MatCardModule,
+    RouterModule],
   templateUrl: './travel-filters-component.html',
   styleUrl: './travel-filters-component.scss'
 })
