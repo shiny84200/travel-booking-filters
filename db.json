@@ -1,0 +1,25 @@
+{
+  "countries": [
+    { "id": 1, "name": "USA" },
+    { "id": 2, "name": "Canada" },
+    { "id": 3, "name": "Australia" }
+  ],
+  "states": [
+    { "id": 1, "countryId": 1, "name": "California" },
+    { "id": 2, "countryId": 1, "name": "Texas" },
+    { "id": 3, "countryId": 2, "name": "Ontario" },
+    { "id": 4, "countryId": 2, "name": "Quebec" },
+    { "id": 5, "countryId": 3, "name": "New South Wales" },
+    { "id": 6, "countryId": 3, "name": "Victoria" }
+  ],
+  "cities": [
+    { "id": 1, "stateId": 1, "name": "Los Angeles" },
+    { "id": 2, "stateId": 1, "name": "San Francisco" },
+    { "id": 3, "stateId": 2, "name": "Houston" },
+    { "id": 4, "stateId": 2, "name": "Dallas" },
+    { "id": 5, "stateId": 3, "name": "Toronto" },
+    { "id": 6, "stateId": 4, "name": "Montreal" },
+    { "id": 7, "stateId": 5, "name": "Sydney" },
+    { "id": 8, "stateId": 6, "name": "Melbourne" }
+  ]
+}

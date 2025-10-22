@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="card">
+    <h2>Travel Booking Filters</h2>
+    <form [formGroup]="travelForm">
+      <div class="form-group">
+        <label>Country:</label>
+        <select formControlName="country">
+          <option [ngValue]="null">Select Country</option>
+          <option *ngFor="let country of countries" [ngValue]="country">{{ country.name }}</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>State:</label>
+        <select formControlName="state">
+          <option [ngValue]="null">Select State</option>
+          <option *ngFor="let state of states" [ngValue]="state">{{ state.name }}</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>City:</label>
+        <select formControlName="city">
+          <option [ngValue]="null">Select City</option>
+          <option *ngFor="let city of cities" [ngValue]="city">{{ city.name }}</option>
+        </select>
+      </div>
+    </form>
+
+    <div class="selection" *ngIf="travelForm.value.country || travelForm.value.state || travelForm.value.city">
+      <strong>Selected:</strong>
+      {{ travelForm.value.country?.name || '' }}
+      {{ travelForm.value.state ? ' > ' + travelForm.value.state.name : '' }}
+      {{ travelForm.value.city ? ' > ' + travelForm.value.city.name : '' }}
+    </div>
+  </div>
+</div>
